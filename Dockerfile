@@ -2,6 +2,8 @@ FROM python:3.14-slim-bookworm
 
 WORKDIR /usr/src/app
 
+USER appuser
+
 COPY uv.lock ./
 
 RUN python3 -m pip install --no-cache-dir uv
