@@ -2,7 +2,6 @@ FROM python:3.14-slim-bookworm
 
 WORKDIR /usr/src/app
 
-USER appuser
 
 COPY uv.lock ./
 
